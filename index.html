@@ -1,0 +1,59 @@
+<html>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>A View To A Kill</title>
+<body>
+
+<!-- Skeleton HTML structure -->
+
+<div id="jsRegion-sidebar" class="sidebar">
+	<img src="img/walken.jpg" />
+	<h2>Max Zorin</h2>
+</div>
+<div id="jsRegion-header" class="header"></div>
+<div id="jsRegion-content" class="content"></div>
+
+<!-- Templates -->
+
+<script id="template-header" type="text/x-handlebars-template">
+	<ul>
+		<li class="button" data-href="home">Home</li>
+		<li class="button" data-href="about">About</li>
+		<li class="button" data-href="contact">Contact</li>
+	</ul>
+</script>
+
+<script id="template-home" type="text/x-handlebars-template">
+	<h1>home</h1>
+</script>
+
+<script id="template-about" type="text/x-handlebars-template">
+	<h1>about</h1>
+</script>
+
+<script id="template-contact" type="text/x-handlebars-template">
+	<h1>contact</h1>
+</script>
+
+<!-- Scripts -->
+
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/underscore-min.js"></script>
+<script type="text/javascript" src="vendor/handlebars.min.js"></script>
+<script type="text/javascript" src="vendor/backbone-min.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+
+<script type="text/javascript" src="router/app.js"></script>
+
+<script type="text/javascript" src="helpers/viewManager.js"></script>
+
+<script type="text/javascript" src="views/base.js"></script>
+<script type="text/javascript" src="views/header.js"></script>
+<script type="text/javascript" src="views/home.js"></script>
+<script type="text/javascript" src="views/about.js"></script>
+<script type="text/javascript" src="views/contact.js"></script>
+
+
+</body>
+</html>
