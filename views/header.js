@@ -14,12 +14,6 @@ app.views.header = app.views.base.extend({
 		app.router.navigate(e.currentTarget.getAttribute('data-href'), {
 			trigger: true
 		});
-	},
-
-	render: function() {
-		var template = Handlebars.compile(this.template);
-		this.$el.html(template());
-		return this;
 	}
 
 });
